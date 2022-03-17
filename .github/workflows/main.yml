@@ -5,12 +5,11 @@ on:
     branches: [ main ]
     
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.0.0
-        
-      - name: Run test script
-        run: node test.js
+    - name: Send request to server
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://localhost:3000'
+        method: 'POST'
