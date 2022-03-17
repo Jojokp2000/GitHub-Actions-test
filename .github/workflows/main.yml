@@ -5,11 +5,11 @@ on:
     branches: [ main ]
     
 jobs:
-  deployment:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Send request to server
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'http://localhost:3000'
-        method: 'POST'
+        url: 'https://a924-192-38-10-18.ngrok.io'
+        method: 'GET'
