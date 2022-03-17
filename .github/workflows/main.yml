@@ -11,5 +11,5 @@ jobs:
     - name: Send request to server
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://gorest.co.in/public/v2/users'
+        url: 'https://a924-192-38-10-18.ngrok.io'
         method: 'GET'
