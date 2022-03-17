@@ -1,0 +1,15 @@
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.0.0
+        
+      - name: Run test script
+        run: node test.js
