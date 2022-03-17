@@ -11,5 +11,5 @@ jobs:
     - name: Send request to server
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'http://localhost:3000'
-        method: 'POST'
+        url: 'https://gorest.co.in/public/v2/users'
+        method: 'GET'
