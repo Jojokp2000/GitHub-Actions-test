@@ -11,5 +11,5 @@ jobs:
     - name: Send request to server
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://a924-192-38-10-18.ngrok.io'
+        url: 'https://8a37-130-225-198-189.ngrok.io'
         method: 'GET'
