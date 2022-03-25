@@ -1,3 +1,4 @@
+const core = require('@actions/core');
 const jest = require('jest');
 
 async function runTests() {
@@ -8,9 +9,9 @@ async function runTests() {
   
 
   if (results.results.success) {
-    process.env.TESTS_PASSED = 'TRUE';
+    core.setOutput('results', results);
   } else {
-    process.env.TESTS_PASSED = 'FALSE';
+    core.setFailed();
   }
 }
 
