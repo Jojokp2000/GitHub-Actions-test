@@ -18,8 +18,7 @@ jobs:
     - name: Run tests
       run: | 
         npm i
-        node
-        console.log('test')
+        node test/runTests.js
     
   
     
