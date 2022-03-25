@@ -1,0 +1,6 @@
+name: 'Wait for response'
+description: 'Pause workflow until a specific response is received'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
