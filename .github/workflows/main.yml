@@ -7,7 +7,21 @@ on:
     branches: [ main, master ]
     
 jobs:
+
+  wait_for_response:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Wait for response
+      uses: cygnetdigital/wait_for_response@v2.0.0
+      with:
+        url: 'http://localhost:3000/'
+        responseCode: '200' 
+        timeout: 20000
+        interval: 500
+
   run_tests:
+    needs: wait_for_response
     runs-on: ubuntu-latest
       
     steps:
