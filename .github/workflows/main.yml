@@ -12,7 +12,9 @@ jobs:
       uses: actions/setup-node@v3.0.0
       
     - name: Run tests
-      run: npm test
+      run: | 
+        npm i
+        npm test
     
   
     
