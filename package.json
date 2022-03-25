@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --verbose > test.txt"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/thor1878/GitHub-Actions-test#readme",
   "dependencies": {
+    "@actions/core": "^1.6.0",
     "jest": "^27.5.1"
   }
 }
