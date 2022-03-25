@@ -15,11 +15,14 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v3.0.0
       
+    - name: Install dependencies
+      run: npm i
+      
     - name: Run tests
-      run: | 
-        npm i
-        node test/runTests.js
-        env
-    
+      id: test-results
+      uses: ./run-tests-action
+
+    - name: Log test results
+      run: echo ${{ steps.test-results.outputs.results }}
   
     
