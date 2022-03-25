@@ -7,8 +7,11 @@ async function runTests() {
   const results = await jest.runCLI(options, options.root);
   
 
-  console.log(results.results.success);
-  return results.results.success;
+  if (results.results.success) {
+    process.env.TESTS_PASSED = 'TRUE';
+  } else {
+    process.env.TESTS_PASSED = 'FALSE';
+  }
 }
 
 runTests();
