@@ -20,7 +20,7 @@ jobs:
       
     - name: Run tests
       id: test-results
-      uses: ./run-tests-action
+      uses: ./test/run-tests-action
 
     - name: Log test results
       run: echo ${{ steps.test-results.outputs.results }}
