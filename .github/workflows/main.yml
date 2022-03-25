@@ -1,15 +1,18 @@
 name: Test
 
 on:
-  push:
-    branches: [ main ]
+  pull_request:
+    branches: [ main, master ]
     
 jobs:
-  build:
+  run_tests:
     runs-on: ubuntu-latest
     steps:
-    - name: Send request to server
-      uses: fjogeleit/http-request-action@v1
-      with:
-        url: 'https://8a37-130-225-198-189.ngrok.io'
-        method: 'POST'
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.0.0
+      
+    - name: Run tests
+      run: npm test
+    
+  
+    
