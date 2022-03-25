@@ -19,6 +19,7 @@ jobs:
       run: | 
         npm i
         node test/runTests.js
+        env
     
   
     
