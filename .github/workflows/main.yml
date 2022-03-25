@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-node@v3.0.0
       
     - name: Run tests
-      working-directory: ../..
+      working-directory: ..
       run: | 
         npm i
         npm test
