@@ -7,10 +7,10 @@ let counter = 0;
 
 app.get('/test', (req, res) => {
 
-    if (counter < 40) {
+    if (counter < 20) {
         res.sendStatus(404);
     } else {
-        res.sendStatus(200)
+        res.sendStatus(200);
     }
 
     counter++;
