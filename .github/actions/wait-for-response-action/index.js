@@ -16,5 +16,6 @@ const interval = setInterval(() => {
     })
 
     console.log(seconds + ' seconds');
+    seconds++;
 
 }, 1000)
