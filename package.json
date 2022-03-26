@@ -24,6 +24,7 @@
     "@actions/core": "^1.6.0",
     "@vercel/ncc": "^0.33.3",
     "express": "^4.17.3",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "node-fetch": "^2.6.7"
   }
 }
