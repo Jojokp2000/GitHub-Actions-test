@@ -10,6 +10,7 @@ const interval = setInterval(() => {
     fetch(url)
     .then(response => response.status)
     .then(status => {
+        console.log(status);
         if (status === 200) {
             clearInterval(interval);
         }
