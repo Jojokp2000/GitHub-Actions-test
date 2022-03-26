@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const fetch = require('node-fetch')
 
-const url = 'https://3667-192-38-10-18.ngrok.io';
+const url = 'https://3667-192-38-10-18.ngrok.io/test';
 
 let seconds = 0;
 
