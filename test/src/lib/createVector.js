@@ -1,1 +1,8 @@
-CiAgICAgICAgICAgICAgICAgICAgY29uc3QgY3JlYXRlVmVjdG9yID0gcmVxdWlyZSgnc3JjL2xpYi9jcmVhdGVWZWN0b3IuanMnKTsKCiAgICAgICAgICAgICAgICAgICAgdGVzdChDcmVhdGUgM0QgdmVjdG9yLCBhc3luYyAoKSA9PiB7CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGNyZWF0ZVZlY3RvcihbIjEiLCIyIiwiMyJdKTsKICAgICAgICAgICAgICAgICAgICAgICAgZXhwZWN0KHJlc3VsdCkudG9FcXVhbCh7IHg6IDEsIHk6IDIsIHo6IDMgfSk7CiAgICAgICAgICAgICAgICAgICAgfSkKICAgICAgICAgICAgICAgIA==
+
+                    const createVector = require('src/lib/createVector.js');
+
+                    test(Create 3D vector, async () => {
+                        const result = await createVector(["1","2","3"]);
+                        expect(result).toEqual({ x: 1, y: 2, z: 3 });
+                    })
+                

@@ -1,1 +1,8 @@
-CiAgICAgICAgICAgICAgICAgICAgY29uc3Qgc3VtID0gcmVxdWlyZSgnc3JjL3N1bS5qcycpOwoKICAgICAgICAgICAgICAgICAgICB0ZXN0KFN1bSB0d28gbnVtYmVycywgYXN5bmMgKCkgPT4gewogICAgICAgICAgICAgICAgICAgICAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBzdW0oWyIzIiwiNCJdKTsKICAgICAgICAgICAgICAgICAgICAgICAgZXhwZWN0KHJlc3VsdCkudG9CZSg3KTsKICAgICAgICAgICAgICAgICAgICB9KQogICAgICAgICAgICAgICAg
+
+                    const sum = require('src/sum.js');
+
+                    test(Sum two numbers, async () => {
+                        const result = await sum(["3","4"]);
+                        expect(result).toBe(7);
+                    })
+                
